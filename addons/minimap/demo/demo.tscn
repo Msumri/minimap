@@ -1,9 +1,7 @@
 [gd_scene format=4 uid="uid://dlylhgvxmpfph"]
 
 [ext_resource type="Texture2D" uid="uid://c8kylx2jxodui" path="res://addons/minimap/demo/Farm RPG FREE 16x16 - Tiny Asset Pack/Tileset/Tileset Spring.png" id="1_5hfv0"]
-[ext_resource type="Script" uid="uid://0xq2liivqarr" path="res://addons/minimap/minimap_node.gd" id="2_c6xj6"]
 [ext_resource type="Texture2D" uid="uid://dlw78e5w30j8" path="res://addons/minimap/demo/Farm RPG FREE 16x16 - Tiny Asset Pack/Farm Animals/Chicken Blonde  Green.png" id="3_m0rpm"]
-[ext_resource type="Texture2D" uid="uid://bpnjkqe4g6t6h" path="res://addons/minimap/demo/Farm RPG FREE 16x16 - Tiny Asset Pack/Farm Animals/marker.png" id="3_s75ny"]
 [ext_resource type="Script" uid="uid://dy7x0fkar0oua" path="res://addons/minimap/demo/chicken.gd" id="4_c6xj6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6xj6"]
@@ -550,15 +548,3 @@ sprite_frames = SubResource("SpriteFrames_884kg")
 zoom = Vector2(2, 2)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=2133681960]
-
-[node name="MiniMap" type="SubViewportContainer" parent="UI" unique_id=271200386 node_paths=PackedStringArray("target")]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -256.0
-offset_bottom = 128.0
-grow_horizontal = 0
-script = ExtResource("2_c6xj6")
-target = NodePath("../../CharacterBody2D")
-marker_image = ExtResource("3_s75ny")
-metadata/_custom_type_script = "uid://0xq2liivqarr"
